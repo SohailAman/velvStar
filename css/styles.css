@@ -295,6 +295,10 @@ button:focus {
   height: 64px;
 }
 
+.resultSec .tokenWrap .dets {
+  margin: 6px 20px 0 20px;
+}
+
 .resultSec .tokenWrap .dets h3 {
   font-style: normal;
   font-weight: 700;
@@ -367,6 +371,15 @@ button:focus {
 .resultSec .modal.show .modal-dialog {
   max-width: 80vw !important;
   margin: 0 auto;
+  position: relative;
+}
+
+.resultSec .modal.show .modal-dialog .btn-close {
+  position: fixed;
+  right: 60px;
+  top: 20px;
+  z-index: 999999;
+  display: none;
 }
 
 .resultSec .modal .tokenWrap.big .img-tok {
@@ -832,7 +845,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1200px) {
   .heroSec h1 {
     font-size: 71px;
     line-height: 110%;
@@ -868,10 +881,6 @@ footer .copyright {
     line-height: 21px;
   }
 
-  .resultSec .modal.show .modalRow {
-    height: auto !important;
-  }
-
   .resultSec .total h3 {
     font-size: 26px;
     line-height: 32px;
@@ -890,6 +899,15 @@ footer .copyright {
   .resultSec .total h2 {
     font-size: 35px;
     line-height: 47px;
+  }
+
+  .resultSec .modal.show .modal-dialog {
+    max-width: 90vw !important;
+  }
+
+  .resultSec .modal .tabsModal,
+  .resultSec .modal .wholeTok .innerWrapper {
+    box-shadow: none;
   }
 
   .meet-ceo .row .caption h2 {
@@ -938,11 +956,25 @@ footer .copyright {
   .contact-sec .row .btn-submit {
     padding: 15px 38px 14px 38px;
   }
+
+  .sendmodel p {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .sendmodel h1 {
+    font-size: 52px;
+    line-height: 80px;
+  }
 }
 
 @media screen and (max-width: 998px) {
   .navbar .navbar-nav {
     background: #ffffff !important;
+  }
+
+  .resultSec .modal.show .modal-dialog .btn-close {
+    display: block;
   }
 
   .serviceSec .card {
@@ -958,6 +990,10 @@ footer .copyright {
     left: 35px;
   }
 
+  .resultSec .modal.show .modalRow {
+    height: auto !important;
+  }
+
   .faqs-sec .accordion .accordIcon {
     top: 10px;
   }
@@ -965,11 +1001,42 @@ footer .copyright {
   .faqs-sec .accordion h3 {
     font-size: 23px;
   }
+
+  .sendmodel img {
+    height: 90px;
+  }
+
+  .sendmodel h1 {
+    font-size: 46px;
+    line-height: 55px;
+  }
+
+  .sendmodel p {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .resultSec .modal.show .modal-dialog {
+    overflow: scroll;
+  }
+
+  .resultSec .modal .tabsModal {
+    overflow-x: scroll;
+  }
+
+  .resultSec .modal .tabsModal .innerMainTabs {
+    min-width: 1200px;
+    overflow: visible;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .navbar {
     padding: 16px !important;
+  }
+
+  .resultSec .modal.show .modal-dialog .btn-close {
+    right: 40px;
   }
 
   .navbar.scroll {
@@ -984,6 +1051,7 @@ footer .copyright {
   .heroSec p {
     font-size: 16px;
     line-height: 28px;
+    padding: 0 12px;
   }
 
   .breakLg {
@@ -1013,10 +1081,36 @@ footer .copyright {
     margin-top: 0;
   }
 
+  .serviceSec .card {
+    min-height: auto;
+    padding: 10px;
+  }
+
   .serviceSec .card .iconWrapper {
-    width: 136px;
-    height: 136px;
-    margin-top: -68px;
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+  }
+
+  .serviceSec .card h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .serviceSec .card p {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .resultSec .swiper-slide .slideInner {
+    padding: 12px;
+  }
+
+  .resultSec .tokenWrap {
+
+    margin-bottom: 0.3rem !important;
+    padding: 10px 0 18px 0;
   }
 
   .resultSec .tokenWrap .dets p,
@@ -1025,14 +1119,27 @@ footer .copyright {
     line-height: 23px;
   }
 
+  .resultSec .tokenWrap .badgeToken {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   .resultSec .tokenWrap .dets h3,
   .resultSec .total h2 {
+    text-align: start;
     font-size: 25px;
-    line-height: 47px;
+    line-height: 38px;
+    margin-bottom: 0 !important;
   }
 
   .resultSec .modal-report {
-    display: none !important;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .resultSec .modal-report i {
+    font-size: 20px;
+
   }
 
   .resultSec .mySwiper .result-swiper-button-prev,
@@ -1040,9 +1147,22 @@ footer .copyright {
     display: none;
   }
 
+  .resultSec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+    width: 15px;
+    height: 15px;
+  }
+
   .resultSec .modal.show .modal-dialog {
     max-width: 94vw !important;
     margin: 0 auto;
+  }
+
+  .meet-ceo>.row,
+  .meet-ceo .topHead {
+
+    padding-top: 1rem !important;
+    margin-bottom: 0rem !important;
   }
 
   .meet-ceo .row .quote img {
@@ -1050,11 +1170,17 @@ footer .copyright {
     display: block;
   }
 
+  .meet-ceo .row .caption h3,
+  .meet-ceo .row .caption h2 {
+    padding: 0 18px;
+  }
+
   .meet-ceo .row .caption p,
   .meet-ceo .row .caption h2 {
     font-size: 15px;
     line-height: 19px;
   }
+
 
   .meet-ceo .row .caption .icons .icon-Connect {
 
@@ -1073,6 +1199,18 @@ footer .copyright {
     height: 20px;
   }
 
+  .faqs-sec.py-5 {
+    padding-top: 0 !important;
+  }
+
+  .faqs-sec .topHead {
+    padding-bottom: 22px !important;
+  }
+
+  .faqs-sec .accordion-item {
+    padding: 12px 0 16px 0 !important;
+  }
+
   .faqs-sec .accordion .accordIcon {
     right: -6px;
   }
@@ -1084,7 +1222,7 @@ footer .copyright {
 
   .faqs-sec .accordion-header .accordion-button {
     display: block !important;
-    padding-left: 1.5rem !important;
+    padding-left: 18px !important;
     padding-right: 1.5rem !important;
   }
 
@@ -1098,11 +1236,10 @@ footer .copyright {
   }
 
   .faqs-sec .accordion .accordion-body {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: 1.5rem !important;
+    padding: 0 !important;
+    margin-left: 20px !important;
     width: 88%;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .faqs-sec .accordion h3 {
@@ -1126,19 +1263,40 @@ footer .copyright {
     font-size: 18px;
   }
 
+  .contact-sec .row .form-control::placeholder,
+  .contact-sec .row .form-control,
+  .contact-sec .row .form-label {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  .contact-sec .row .form-control {
+    padding: 12px 14px 8px 14px;
+  }
+
+  .contactModal .modal-content .modal-header button {
+    font-size: 16px;
+  }
+
+  .sendmodel img {
+    height: 75px;
+  }
+
   .sendmodel h1 {
-    font-size: 60px;
-    line-height: 75px;
+    font-size: 40px;
+    line-height: 55px;
   }
 
   .sendmodel p {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .contactModal .modal-dialog {
     max-width: 88vw !important;
     margin: 0 auto;
+    padding: 0;
   }
 
   .contactModal .modal-content .modal-header {
@@ -1149,14 +1307,34 @@ footer .copyright {
     padding: 18px 14px;
   }
 
-  .contact-sec .row .form-control {
-    padding: 19px 21px 12px 21px;
-  }
 
   .contact-sec .row .btn-submit {
-    font-size: 20px;
-    line-height: 30px;
-    padding: 14px;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 12px;
     width: 100%;
+  }
+
+  .resultSec .modal .tokenWrap.big .img-tok img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .resultSec .modal .tokenWrap.big .img-tok {
+    width: 80px;
+    height: 81px;
+  }
+
+  .resultSec .modal .wholeTok {
+    margin-top: 0rem !important;
+  }
+
+  .resultSec .modal .smPad {
+    padding-top: 0 !important;
+  }
+
+
+  .resultSec .modal .tokenWrap {
+    margin-bottom: .5rem !important;
   }
 }
