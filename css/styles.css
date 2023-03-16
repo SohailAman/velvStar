@@ -165,8 +165,8 @@ button:focus {
 }
 
 .serviceSec .card .iconWrapper {
-  width: 105px;
-  height: 105px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
   margin-top: -50px !important;
   left: 29%;
@@ -177,14 +177,14 @@ button:focus {
 }
 
 .serviceSec .card .iconWrapper img {
-  height: 53px;
+  height: 50px;
 }
 
 .serviceSec .card h2 {
   font-style: normal;
   font-weight: 600;
-  font-size: 26px;
-  line-height: 38px;
+  font-size: 24px;
+  line-height: 32px;
   text-align: center;
   color: #000000;
   margin: 28px auto 18px auto;
