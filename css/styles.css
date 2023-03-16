@@ -365,8 +365,16 @@ button:focus {
   font-size: 26px;
 }
 
+@media screen and (min-width:1300px) {
+  .resultSec .modal.show .modal-dialog {
+    max-width: 80vw !important;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
 .resultSec .modal.show .modal-dialog {
-  max-width: 80vw !important;
+  max-width: 70vw !important;
   margin: 0 auto;
   position: relative;
 }
@@ -379,9 +387,13 @@ button:focus {
   display: none;
 }
 
+.resultSec .modal .slideInner {
+  padding: 8px;
+}
+
 .resultSec .modal .tokenWrap.big .img-tok {
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
 }
 
 .resultSec .modal .tabsModal,
@@ -392,18 +404,43 @@ button:focus {
 }
 
 .resultSec .modal .tokenWrap.big .img-tok img {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
 }
 
 .resultSec .modal .wholeTok .tokenWrap .img-tok {
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   background: #451257;
 }
 
 .resultSec .modal .tokenWrap.blue .img-tok {
   background: #7390f9;
+}
+
+.resultSec .modal .tokenWrap {
+  padding: 10px 12px;
+}
+
+.resultSec .modal .tokenWrap .dets h3 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.resultSec .modal .tokenWrap .dets p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.resultSec .modal .total h3 {
+
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.resultSec .modal .total h2 {
+  font-size: 24px;
+  line-height: 34px;
 }
 
 .resultSec .modal .tokenWrap .img-tok img {
