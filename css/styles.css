@@ -122,7 +122,7 @@ button:focus {
 .heroSec h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 76px;
   line-height: 110%;
   text-align: center;
   color: #451257;
@@ -131,8 +131,8 @@ button:focus {
 .heroSec p {
   font-style: normal;
   font-weight: 400;
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 24px;
   text-align: center;
   letter-spacing: -0.008em;
   color: #435057;
@@ -272,7 +272,7 @@ button:focus {
 }
 
 .resultSec .tokenWrap {
-  padding: 32px 22px;
+  padding: 22px;
   box-shadow: 4px 4px 19px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
@@ -380,8 +380,8 @@ button:focus {
 }
 
 .resultSec .modal .tokenWrap.big .img-tok {
-  width: 135px;
-  height: 135px;
+  width: 110px;
+  height: 110px;
 }
 
 .resultSec .modal .tabsModal,
@@ -392,8 +392,8 @@ button:focus {
 }
 
 .resultSec .modal .tokenWrap.big .img-tok img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 
 .resultSec .modal .wholeTok .tokenWrap .img-tok {
@@ -414,7 +414,7 @@ button:focus {
 .resultSec .modal .tabsModal .innerMainTabs>.nav-tabs .nav-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 12.3349px;
+  font-size: 12px;
   line-height: 15px;
   color: #000000 !important;
 }
@@ -586,7 +586,7 @@ button:focus {
 .faqs-sec .accordion h3 {
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 120%;
   display: flex;
   align-items: center;
@@ -641,7 +641,7 @@ button:focus {
 .faqs-sec .accordion .accordion-body {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 0;
   line-height: 140%;
   color: rgba(60, 60, 67, 0.85);
@@ -690,7 +690,7 @@ button:focus {
 .contact-sec .row .form-label {
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 34px;
   color: #ffffff;
 }
@@ -699,11 +699,11 @@ button:focus {
   background: #f6f6f6;
   border: 2px solid #451257;
   border-radius: 10px;
-  padding: 14px 16px 12px 16px;
+  padding: 12px 14px 10px 14px;
   width: 100%;
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   color: #878787;
 }
 
@@ -848,7 +848,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1201px) {
   .heroSec h1 {
     font-size: 71px;
     line-height: 110%;
@@ -870,7 +870,7 @@ footer .copyright {
   }
 
   .serviceSec .card {
-    min-height: 35vh;
+    min-height: 30vh;
     margin-top: 6rem;
   }
 
