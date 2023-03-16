@@ -366,20 +366,20 @@ button:focus {
 }
 
 @media screen and (min-width:1300px) {
-  .resultSec .modal.show .modal-dialog {
+  .resultSec .modal .modal-dialog {
     max-width: 80vw !important;
     margin: 0 auto;
     position: relative;
   }
 }
 
-.resultSec .modal.show .modal-dialog {
+.resultSec .modal .modal-dialog {
   max-width: 70vw !important;
   margin: 0 auto;
   position: relative;
 }
 
-.resultSec .modal.show .modal-dialog .btn-close {
+.resultSec .modal .modal-dialog .btn-close {
   position: fixed;
   right: 60px;
   top: 20px;
