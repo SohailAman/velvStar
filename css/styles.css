@@ -885,7 +885,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .heroSec h1 {
     font-size: 71px;
     line-height: 110%;
