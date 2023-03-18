@@ -99,6 +99,7 @@ button:focus {
 
 .navbar .navbar-toggler img {
   height: 23.33px;
+  width: auto;
 }
 
 .navbar .nav-link {
@@ -109,7 +110,22 @@ button:focus {
   color: #2f2f2f;
   margin: 0 12px;
 }
-
+.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none !important;
+} 
+.navbar .navbar-toggler[aria-expanded="true"] img:nth-of-type(1) {
+  display: none;
+} 
+.navbar .navbar-toggler[aria-expanded="true"] img:nth-of-type(2) {
+  display: block;
+} 
+.navbar .navbar-toggler[aria-expanded="false"] img:nth-of-type(1) {
+  display: block;
+} 
+.navbar .navbar-toggler[aria-expanded="false"] img:nth-of-type(2) {
+  display: none;
+} 
 /* heroSec */
 .heroSec {
   background: url(../assets/Background.png);
@@ -258,13 +274,17 @@ button:focus {
   right: 75px;
 }
 
-.resultSec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+.resultSec
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet-active {
   background: #ffffff !important;
   border: 4px solid #888888 !important;
   transition: all 0.2s linear;
 }
 
-.resultSec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.resultSec
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   background: #888888;
@@ -365,7 +385,7 @@ button:focus {
   font-size: 26px;
 }
 
-@media screen and (min-width:1300px) {
+@media screen and (min-width: 1300px) {
   .resultSec .modal .modal-dialog {
     max-width: 80vw !important;
     margin: 0 auto;
@@ -380,11 +400,10 @@ button:focus {
 }
 
 .resultSec .modal .modal-dialog .btn-close {
-  position: fixed;
-  right: 60px;
+  position: absolute;
+  right: 20px;
   top: 20px;
   z-index: 999999;
-  display: none;
 }
 
 .resultSec .modal .slideInner {
@@ -433,7 +452,6 @@ button:focus {
 }
 
 .resultSec .modal .total h3 {
-
   font-size: 18px;
   line-height: 22px;
 }
@@ -448,7 +466,7 @@ button:focus {
   height: 40px;
 }
 
-.resultSec .modal .tabsModal .innerMainTabs>.nav-tabs .nav-link {
+.resultSec .modal .tabsModal .innerMainTabs > .nav-tabs .nav-link {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -456,7 +474,7 @@ button:focus {
   color: #000000 !important;
 }
 
-.resultSec .modal .tabsModal .innerMainTabs>.nav-tabs .nav-link.active {
+.resultSec .modal .tabsModal .innerMainTabs > .nav-tabs .nav-link.active {
   border-bottom: 3px solid #44ea72 !important;
   font-weight: bold;
 }
@@ -788,7 +806,7 @@ button:focus {
   font-size: 30px;
   line-height: 38px;
   text-align: center;
-  color: #0A142F;
+  color: #0a142f;
 }
 
 .contactModal .modal-dialog {
@@ -1013,10 +1031,6 @@ footer .copyright {
     background: #ffffff !important;
   }
 
-  .resultSec .modal.show .modal-dialog .btn-close {
-    display: block;
-  }
-
   .serviceSec .card {
     min-height: 32vh;
     margin-top: 6rem;
@@ -1073,10 +1087,6 @@ footer .copyright {
 @media screen and (max-width: 767px) {
   .navbar {
     padding: 16px !important;
-  }
-
-  .resultSec .modal.show .modal-dialog .btn-close {
-    right: 40px;
   }
 
   .navbar.scroll {
@@ -1148,7 +1158,6 @@ footer .copyright {
   }
 
   .resultSec .tokenWrap {
-
     margin-bottom: 0.3rem !important;
     padding: 10px 0 18px 0;
   }
@@ -1179,7 +1188,6 @@ footer .copyright {
 
   .resultSec .modal-report i {
     font-size: 20px;
-
   }
 
   .resultSec .mySwiper .result-swiper-button-prev,
@@ -1187,8 +1195,9 @@ footer .copyright {
     display: none;
   }
 
-  .resultSec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-
+  .resultSec
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
   }
@@ -1198,9 +1207,8 @@ footer .copyright {
     margin: 0 auto;
   }
 
-  .meet-ceo>.row,
+  .meet-ceo > .row,
   .meet-ceo .topHead {
-
     padding-top: 1rem !important;
     margin-bottom: 0rem !important;
   }
@@ -1221,12 +1229,9 @@ footer .copyright {
     line-height: 19px;
   }
 
-
   .meet-ceo .row .caption .icons .icon-Connect {
-
     height: 55px;
     width: 55px;
-
   }
 
   .meet-ceo .row .ceoImg {
@@ -1253,6 +1258,8 @@ footer .copyright {
 
   .faqs-sec .accordion .accordIcon {
     right: -6px;
+    width: 32px;
+    height: 32px;
   }
 
   .topHead .mainHead {
@@ -1263,12 +1270,12 @@ footer .copyright {
   .faqs-sec .accordion-header .accordion-button {
     display: block !important;
     padding-left: 18px !important;
-    padding-right: 1.5rem !important;
+    padding-right: 1.9rem !important;
   }
 
   .faqs-sec .accordion .accordIcon {
-    bottom: 16px;
-    top: auto;
+    bottom: auto;
+    top: 46px;
   }
 
   .faqs-sec .accordion h3 {
@@ -1347,7 +1354,6 @@ footer .copyright {
     padding: 18px 14px;
   }
 
-
   .contact-sec .row .btn-submit {
     font-size: 16px;
     line-height: 28px;
@@ -1373,8 +1379,7 @@ footer .copyright {
     padding-top: 0 !important;
   }
 
-
   .resultSec .modal .tokenWrap {
-    margin-bottom: .5rem !important;
+    margin-bottom: 0.5rem !important;
   }
 }

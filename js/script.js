@@ -45,16 +45,66 @@ window.onscroll = () => {
   }
 };
 
-
 // -=--
 
 $(document).ready(function () {
   // Smooth scroll to section
-  $('.redirectLink').click(function () {
-    var section = $(this).attr('href');
-    $('html, body').animate({
-      scrollTop: $(section).offset().top
-    }, 800);
+  $(".redirectLink").click(function () {
+    var section = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(section).offset().top,
+      },
+      800
+    );
     return false;
   });
 });
+
+// ----
+let contactForm = document.getElementById("contactForm");
+let btnSubmit = document.getElementById("subbb");
+let Name = document.getElementById("Name");
+
+let linksNavs = document.querySelectorAll(".linksNav");
+let navbarNavDropdown = document.getElementById("navbarNavDropdown");
+let toggler = document.getElementById("toggler");
+
+
+linksNavs.forEach((linksNav) => {
+  linksNav.addEventListener("click", () => {
+    navbarNavDropdown.classList.remove("show");
+    toggler.classList.add("collapsed");
+    toggler.setAttribute("aria-expanded", "false");
+  });
+});
+
+// Validate
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})();
+
+btnSubmit.addEventListener('mouseenter',()=>{
+
+  if (contactForm.classList.contains('was-validated')) {
+    console.log(btnSubmit);
+    btnSubmit.setAttribute("data-bs-toggle", "modal");
+    btnSubmit.setAttribute("type", "button");
+  } 
+  
+})
