@@ -1,11 +1,9 @@
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
+var swiper = new Swiper(".mySwiper", { 
   effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
+  grabCursor: true, 
   spaceBetween: 40,
   speed: 600,
-  slidesPerView: 1.1,
+  slidesPerView: 1,
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
@@ -24,11 +22,11 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     768: {
       spaceBetween: 30,
-      slidesPerView: 1.4,
+      slidesPerView: 2.1,
     },
     1024: {
       spaceBetween: 30,
-      slidesPerView: 2,
+      slidesPerView: 2.45,
     },
   },
 });
