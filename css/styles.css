@@ -294,13 +294,17 @@ button:focus {
   z-index: 1;
 }
 
-.resultSec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+.resultSec
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet-active {
   background: #ffffff !important;
   border: 4px solid #888888 !important;
   transition: all 0.2s linear;
 }
 
-.resultSec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.resultSec
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   background: #888888;
@@ -362,6 +366,7 @@ button:focus {
   letter-spacing: -0.012em;
   color: #000000;
   border: 2px solid #25eb8c;
+  height: fit-content;
   border-radius: 50px;
 }
 
@@ -520,7 +525,7 @@ button:focus {
   height: 35px;
 }
 
-.resultSec .modal .tabsModal .innerMainTabs>.nav-tabs .nav-link {
+.resultSec .modal .tabsModal .innerMainTabs > .nav-tabs .nav-link {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -528,7 +533,7 @@ button:focus {
   color: #000000 !important;
 }
 
-.resultSec .modal .tabsModal .innerMainTabs>.nav-tabs .nav-link.active {
+.resultSec .modal .tabsModal .innerMainTabs > .nav-tabs .nav-link.active {
   border-bottom: 3px solid #44ea72 !important;
   font-weight: bold;
 }
@@ -1020,7 +1025,6 @@ footer .copyright {
   }
 
   .resultSec .modal .wholeTok .tokenWrap .img-tok {
-
     width: 50px;
     height: 50px;
   }
@@ -1176,7 +1180,6 @@ footer .copyright {
 
   .btns a {
     padding: 10px 0;
-
   }
 
   .heroSec p {
@@ -1309,7 +1312,9 @@ footer .copyright {
     display: none;
   }
 
-  .resultSec .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  .resultSec
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
   }
@@ -1319,8 +1324,7 @@ footer .copyright {
     margin: 0 auto;
   }
 
-  .meet-ceo>.row {
-
+  .meet-ceo > .row {
     padding-top: 0rem !important;
     padding-bottom: 0rem !important;
     margin-bottom: 0rem !important;
@@ -1330,7 +1334,6 @@ footer .copyright {
     padding-top: 0rem !important;
     margin-bottom: 0rem !important;
     margin-top: 0rem !important;
-
   }
 
   .meet-ceo .row .quote img {
